@@ -31,3 +31,31 @@ ssl_verify false
 
 完成 
 
+
+然后安装tensorflow
+在conda prompt里使用
+创建一个环境用于安装tensorflow，环境名可以自己命名，选择python的版本
+	conda create -n 环境的名字 python=版本号
+	conda create -n tensorflow2 python=3.8
+激活tensorflow环境
+	activate tensorflow2
+
+查看当前可以使用的tensorflow版本
+	conda search  --full -name tensorflow.（name一般不用啦 要去掉）
+最后安装 tensorflow
+	pip install tensorflow-cpu==2.5.0 -i  https://mirrors.aliyun.com/pypi/simple/
+
+查看是否安装成功
+ 	在环境下使用 active xxx环境名
+进入python环境	
+	python
+在python中导入tensorflow包
+ 	import tensorflow as tf
+查看版本号和安装路径
+	tf.__version__
+	tf.__path__
+
+更新包
+
+	pip install --upgrade 包名
+  											
