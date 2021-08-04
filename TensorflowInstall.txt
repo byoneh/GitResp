@@ -1,0 +1,33 @@
+第一步：先去清华镜像源下载anaconda
+	https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
+第二步：打开Anaconda Prompt (anaconda3)
+
+在里面设置配置环境：
+	conda config --add 
+channels http://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda- forge/
+
+	conda config
+add channels http://mirrors.
+tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+
+	conda config
+add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/
+main
+/
+
+	conda config
+ --set
+ show_channel_urls
+  yes
+
+	conda config --set 
+ssl_verify false
+运行以上语句 以后在user用户下找到.condarc
+	将文件 内容内的defeat删除即可
+	如果是https 要去掉s
+
+最后安装
+	conda install cudatoolkit=10.1 cudnn=7.6.5
+
+完成 
+
